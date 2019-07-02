@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "connexion.css",
+	"sources": [
+		"../scss/connexion.scss"
+	],
+	"sourcesContent": [
+		".homeBody{\r\n  h1{\r\n    font-size: 20px !important;\r\n  }\r\n  .connexion{\r\n    width: 80%;\r\n    margin: auto;\r\n    padding-top: 10px;\r\n    form{\r\n      div:nth-child(1){\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        input{\r\n          margin-bottom: 25px;\r\n          padding: 10px;\r\n          border-radius: 5px;\r\n          outline: none;\r\n          border: 1px solid gray;\r\n        }\r\n      }\r\n      div:nth-child(2){\r\n        display: flex;\r\n        justify-content: space-evenly;\r\n      }\r\n    }\r\n  }\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AACE,SADO,CACP,EAAE,CAAA;EACA,SAAS,EAAE,eAAe;CAC3B;;;AAHH,AAIE,SAJO,CAIP,UAAU,CAAA;EACR,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;EACZ,WAAW,EAAE,IAAI;CAmBlB;;;AA1BH,AASM,SATG,CAIP,UAAU,CAIR,IAAI,CACF,GAAG,AAAA,UAAW,CAAA,CAAC,EAAC;EACd,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;CAQpB;;;AApBP,AAaQ,SAbC,CAIP,UAAU,CAIR,IAAI,CACF,GAAG,AAAA,UAAW,CAAA,CAAC,EAIb,KAAK,CAAA;EACH,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,GAAG;EAClB,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,cAAc;CACvB;;;AAnBT,AAqBM,SArBG,CAIP,UAAU,CAIR,IAAI,CAaF,GAAG,AAAA,UAAW,CAAA,CAAC,EAAC;EACd,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;CAC9B"
+}

@@ -1,0 +1,103 @@
+.homeBody{
+    padding: 25px 0;
+}
+.homeBody section header h1 {
+    text-align: center;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.mySlides {
+    display: none;
+    padding-top: 13px;
+}
+.slideshow-container {
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 500ms ease;
+    border-radius: 3px 3px 3px 3px;
+}
+.next {
+    right: 0;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.93);
+    color: white;
+}
+.structuration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin btn($circleBtn: false){
+    background-color: $background;
+    border: 1px solid $blood;
+    cursor: pointer;
+    @if($circleBtn == true){
+        height: 50px;
+        width: 50px;
+        font-size: 25px;
+        border-radius: 50%;
+        filter: drop-shadow(1px 1px 3px $blood);
+    }
+    @else{
+        margin-top: 10px;
+        border-radius: 17px;
+        font-size: 16px;
+        padding: 10px;
+        filter: drop-shadow(1px 1px 5px $blood);
+    }
+}
+.structuration a button{
+    @include btn($circleBtn: false);
+}
+.structuration img{
+    width: 35%;
+}
+.structuration a {
+    text-decoration: none;
+    padding-top: 7px;
+}
+.structuration h2 {
+    padding-top: 6px;
+}
+@media all and (max-width: 768px) {
+    .structuration{
+        h2{
+            width: 60%;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            width: 60%;
+        }
+    }
+}
+@media all and (max-width: 426px){
+    .structuration{
+        h2{
+            font-size: 19px;
+        }
+        img{
+            width: 60%;
+        }
+    }
+    .next , .prev{
+         padding: 12px;
+     }
+}

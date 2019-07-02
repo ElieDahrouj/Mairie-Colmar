@@ -1,0 +1,35 @@
+/* line 2, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+.homeBody h1 {
+  font-size: 20px !important;
+}
+
+/* line 5, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+.homeBody .connexion {
+  width: 80%;
+  margin: auto;
+  padding-top: 10px;
+}
+
+/* line 10, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+.homeBody .connexion form div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 14, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+.homeBody .connexion form div:nth-child(1) input {
+  margin-bottom: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
+}
+
+/* line 22, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+.homeBody .connexion form div:nth-child(2) {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*# sourceMappingURL=connexion.css.map */

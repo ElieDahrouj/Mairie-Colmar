@@ -1,0 +1,28 @@
+.homeBody{
+  .coordonnees {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    .title{
+      h3 {
+        text-decoration: underline;
+        color: $blood;
+        padding-bottom: 10px;
+      }
+      div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+      }
+    }
+    .cityHall{
+      width: 500px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

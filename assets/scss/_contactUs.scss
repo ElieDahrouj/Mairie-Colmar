@@ -1,0 +1,124 @@
+$colorSelectOne : rgb(198, 198, 198);
+$colorSelectTwo : rgb(187, 187, 187);
+$colorInput : #a8a8a8;
+
+@mixin positionInput(){
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@mixin message($colorMessage :false){
+  padding-top: 10px;
+  font-weight: bold;
+  @if($colorMessage){
+    color: $colorBtnSend;
+  }
+  @else{
+    color: $blood;
+  }
+}
+.false{
+  @include message($colorMessage :false)
+}
+.true{
+  @include message($colorMessage :true)
+}
+.signal{
+  padding: 25px 0;
+  header{
+    width: 90%;
+    margin: auto;
+    h1{
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  .report{
+    width: 70%;
+    margin: auto;
+    #register {
+      #firstBlock {
+        padding-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-end;
+        div:nth-child(1), div:nth-child(2) {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          label {
+            color: $blood;
+          }
+          select {
+            @include colorBtnContact($button: false);
+          }
+        }
+      }
+
+      #secondBlock {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        div:nth-child(1) {
+          @include positionInput();
+          justify-content: space-between;
+          input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid $colorInput;
+          }
+          div {
+            button {
+              @include colorBtnContact($button: true)
+            }
+          }
+        }
+        div:nth-child(2) {
+          @include positionInput();
+          textarea {
+            width: 100%;
+            min-height: 75px;
+            padding: 6px;
+            border-radius: 5px;
+            border: 1px solid $colorInput;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all AND (max-width: 1012px) {
+  .signal{
+    .report{
+      #register{
+        #firstBlock{
+          div:nth-child(2){
+            padding-top:10px;
+          }
+        }
+        #secondBlock{
+          flex-direction: column-reverse;
+          div:nth-child(1){
+            div:nth-child(1){
+              padding-top: 10px;
+            }
+            div:nth-child(2){
+              padding-top: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all AND (max-width: 426px){
+  .signal {
+    header {
+      h1 {
+        font-size: 17px;
+      }
+    }
+  }
+}

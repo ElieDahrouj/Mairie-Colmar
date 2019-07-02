@@ -1,0 +1,33 @@
+$textBtn: #068532;
+$colorBlack : black;
+.homeBody{
+  h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
+  }
+  .faq{
+    padding-top: 10px;
+    div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a{
+        font-size: 20px;
+        padding:5px 0;
+        text-decoration: none;
+        color: $colorBlack;
+        &:hover{
+          color: $textBtn;
+        }
+      }
+    }
+  }
+}
+@media all AND (max-width: 426px) {
+  .homeBody{
+    h1{
+      font-size: 19px;
+    }
+  }
+}

@@ -1,0 +1,1557 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../../assets/police/Poppins/Poppins-Regular.ttf");
+}
+
+/* line 28, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: Poppins;
+}
+
+/* line 33, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+.navBar {
+  margin: auto;
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* line 40, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+.navBarMobile {
+  display: none;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 99;
+}
+
+/* line 47, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+.navBarMobile #mobileContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* line 51, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+.navBarMobile #mobileContainer #logoMobile {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 56, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+.navBarMobile #mobileContainer #logoMobile img {
+  width: 27%;
+}
+
+/* line 61, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+.navBarMobile #mobileContainer .menu i {
+  font-size: 35px;
+  color: #1A68B5;
+}
+
+/* line 66, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+.navBarMobile #mobileContainer .fa-user-circle {
+  font-size: 35px;
+  color: #1A68B5;
+}
+
+/* line 72, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+#logo {
+  width: 10%;
+}
+
+/* line 75, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+.navigation {
+  display: flex;
+  width: 75%;
+  height: 100%;
+}
+
+/* line 80, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+.navigation a:hover {
+  background-color: #F23315;
+  color: white;
+}
+
+/* line 84, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+.navigation a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  align-items: center;
+}
+
+/* line 95, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+.socialNetwork {
+  width: 11%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 100, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+.socialNetwork i {
+  font-size: 25px;
+}
+
+/* line 103, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+.socialNetwork a {
+  color: black;
+}
+
+/* line 106, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+#picture {
+  width: 100%;
+  display: block;
+}
+
+/* line 110, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+#modal {
+  animation-name: modalOpening;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: #CA2D15;
+  top: 0;
+  z-index: 2;
+  display: none;
+}
+
+/* line 121, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+#modal .closeModal {
+  font-size: 35px;
+  color: white;
+  padding-left: 20px;
+}
+
+/* line 126, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+#modal .linksMobiles {
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 132, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+#modal .linksMobiles a {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+/* line 139, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+#modal .linksMobiles a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* line 145, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+#modal .socialNetworkMobile {
+  font-size: 40px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+/* line 150, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+#modal .socialNetworkMobile a {
+  color: white;
+}
+
+@keyframes modalOpening {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@media all and (max-width: 768px) {
+  /* line 166, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+  .navigation a {
+    font-size: 12px;
+    padding: 0 5px;
+    text-align: center;
+  }
+  /* line 171, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+  #logo {
+    width: 11%;
+  }
+  /* line 174, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+  .socialNetwork {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 178, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+  .socialNetwork i {
+    padding: 5px;
+  }
+}
+
+@media all and (max-width: 531px) {
+  /* line 183, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+  .navigation a {
+    font-size: 10px;
+  }
+  /* line 186, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+  .socialNetwork i {
+    font-size: 16px;
+  }
+  /* line 189, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+  .navBar {
+    height: 85px;
+  }
+}
+
+@media all and (max-width: 426px) {
+  /* line 194, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+  .navBar {
+    display: none;
+  }
+  /* line 197, ../../../../../wamp64/www/projectCoding/assets/scss/_header.scss */
+  .navBarMobile {
+    display: block;
+  }
+}
+
+/* line 1, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+.informations {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 20px;
+  width: 36%;
+  position: relative;
+}
+
+/* line 11, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+.informations a i {
+  padding-right: 8px;
+}
+
+/* line 14, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+.informations a {
+  color: white;
+  z-index: 1;
+  text-decoration: none;
+}
+
+/* line 19, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+.informations:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  right: 0;
+  height: 125px;
+  border-right: 1px solid white;
+}
+
+/* line 29, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+.adresse {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 5px;
+}
+
+/* line 35, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+.adresse a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 39, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+.size {
+  color: white;
+}
+
+/* line 42, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+.contactUs {
+  font-size: 25px;
+}
+
+/* line 45, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #CA2D15;
+  width: 76%;
+}
+
+/* line 52, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+.localisation {
+  width: 24%;
+  display: flex;
+}
+
+/* line 56, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+footer {
+  display: flex;
+}
+
+@media all and (max-width: 768px) {
+  /* line 60, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+  .informations {
+    font-size: 15px;
+  }
+  /* line 64, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+  .size .contactUs {
+    font-size: 20px;
+  }
+  /* line 67, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+  .size .adresse {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 578px) {
+  /* line 73, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+  .informations {
+    font-size: 12px;
+    padding: 0 5px;
+    justify-content: space-around;
+  }
+  /* line 78, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+  .size {
+    padding: 0 5px;
+  }
+  /* line 80, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+  .size .contactUs {
+    font-size: 15px;
+  }
+  /* line 83, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+  .size .adresse {
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 457px) {
+  /* line 89, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+  .informations {
+    width: 45%;
+  }
+}
+
+@media all and (max-width: 426px) {
+  /* line 94, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+  footer {
+    flex-direction: column;
+  }
+  /* line 96, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+  footer .localisation {
+    width: 100%;
+  }
+  /* line 99, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+  footer .contact {
+    width: 100%;
+  }
+  /* line 101, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+  footer .contact .informations {
+    width: 100%;
+    height: 125px;
+    font-size: 14px;
+    padding: 0 6px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  /* line 108, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+  footer .contact .informations:after {
+    bottom: 0;
+  }
+  /* line 112, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+  footer .contact .size {
+    width: 100%;
+    padding: 5px 5px;
+    flex-direction: column;
+    text-align: center;
+  }
+  /* line 117, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+  footer .contact .size .contactUs {
+    font-size: 17px;
+  }
+  /* line 120, ../../../../../wamp64/www/projectCoding/assets/scss/_footer.scss */
+  footer .contact .size .adresse {
+    align-items: center;
+    font-size: 14px;
+  }
+}
+
+/* line 1, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+.homeBody {
+  padding: 25px 0;
+}
+
+/* line 4, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+.homeBody section header h1 {
+  text-align: center;
+}
+
+/* line 7, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* line 15, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+.mySlides {
+  display: none;
+  padding-top: 13px;
+}
+
+/* line 19, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+.slideshow-container {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+}
+
+/* line 24, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  margin-top: -22px;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 500ms ease;
+  border-radius: 3px 3px 3px 3px;
+}
+
+/* line 35, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+.next {
+  right: 0;
+}
+
+/* line 38, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.93);
+  color: white;
+}
+
+/* line 42, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+.structuration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 66, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+.structuration a button {
+  background-color: white;
+  border: 1px solid #F23315;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 17px;
+  font-size: 16px;
+  padding: 10px;
+  filter: drop-shadow(1px 1px 5px #F23315);
+}
+
+/* line 69, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+.structuration img {
+  width: 35%;
+}
+
+/* line 72, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+.structuration a {
+  text-decoration: none;
+  padding-top: 7px;
+}
+
+/* line 76, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+.structuration h2 {
+  padding-top: 6px;
+}
+
+@media all and (max-width: 768px) {
+  /* line 81, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+  .structuration h2 {
+    width: 60%;
+    text-align: center;
+  }
+  /* line 85, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+  .structuration p {
+    text-align: center;
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 426px) {
+  /* line 93, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+  .structuration h2 {
+    font-size: 19px;
+  }
+  /* line 96, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+  .structuration img {
+    width: 60%;
+  }
+  /* line 100, ../../../../../wamp64/www/projectCoding/assets/scss/_homePage.scss */
+  .next, .prev {
+    padding: 12px;
+  }
+}
+
+/* line 2, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+.articleId {
+  width: 90%;
+  margin: auto;
+  padding: 35px 0;
+}
+
+/* line 7, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+.articleId article h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+/* line 11, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+.articleId article h3 {
+  text-align: center;
+  color: #F23315;
+  padding-bottom: 30px;
+}
+
+/* line 16, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+.container img {
+  width: 40%;
+}
+
+/* line 19, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+.container p {
+  width: 58%;
+}
+
+/* line 35, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+.container {
+  justify-content: space-between;
+}
+
+/* line 38, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+.video {
+  justify-content: center;
+}
+
+/* line 41, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+.secondaryPicture {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* line 43, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+.secondaryPicture img {
+  max-width: 45%;
+  padding: 8px 0;
+}
+
+/* line 48, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+.info, .container, .video, .secondaryPicture {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+/* line 53, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+.articleId article .back {
+  margin-bottom: 25px;
+}
+
+/* line 55, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+.articleId article .back a {
+  text-decoration: none;
+  color: #068532;
+}
+
+/* line 58, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+.articleId article .back a span {
+  padding: 10px 18px;
+  border: 1px solid #068532;
+  border-radius: 100%;
+}
+
+@media all and (max-width: 769px) {
+  /* line 66, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+  .container {
+    flex-direction: column;
+  }
+  /* line 68, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+  .container img {
+    width: 70%;
+  }
+  /* line 71, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+  .container p {
+    padding-top: 15px;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 496px) {
+  /* line 79, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+  .container.video iframe {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 426px) {
+  /* line 86, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+  .container img {
+    width: 90%;
+  }
+  /* line 91, ../../../../../wamp64/www/projectCoding/assets/scss/_article.scss */
+  .secondaryPicture img {
+    max-width: 70%;
+    padding: 10px 0;
+  }
+}
+
+/* line 1, ../../../../../wamp64/www/projectCoding/assets/scss/_cityInformations.scss */
+.moreInformations {
+  width: 90%;
+  margin: auto;
+}
+
+/* line 4, ../../../../../wamp64/www/projectCoding/assets/scss/_cityInformations.scss */
+.moreInformations .presentation {
+  padding-top: 20px;
+}
+
+/* line 7, ../../../../../wamp64/www/projectCoding/assets/scss/_cityInformations.scss */
+.moreInformations .presentation header h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* line 12, ../../../../../wamp64/www/projectCoding/assets/scss/_cityInformations.scss */
+.moreInformations .presentation article {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* line 17, ../../../../../wamp64/www/projectCoding/assets/scss/_cityInformations.scss */
+.moreInformations .presentation article p {
+  width: 50%;
+}
+
+/* line 20, ../../../../../wamp64/www/projectCoding/assets/scss/_cityInformations.scss */
+.moreInformations .presentation article img {
+  width: 40%;
+}
+
+/* line 25, ../../../../../wamp64/www/projectCoding/assets/scss/_cityInformations.scss */
+.moreInformations .services {
+  padding: 20px 0;
+}
+
+/* line 28, ../../../../../wamp64/www/projectCoding/assets/scss/_cityInformations.scss */
+.moreInformations .services header h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* line 33, ../../../../../wamp64/www/projectCoding/assets/scss/_cityInformations.scss */
+.moreInformations .services div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* line 37, ../../../../../wamp64/www/projectCoding/assets/scss/_cityInformations.scss */
+.moreInformations .services div a {
+  color: black;
+  border: 1px solid #CA2D15;
+  text-decoration: none;
+  margin: 15px;
+}
+
+/* line 42, ../../../../../wamp64/www/projectCoding/assets/scss/_cityInformations.scss */
+.moreInformations .services div a figure {
+  max-width: 285px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* line 49, ../../../../../wamp64/www/projectCoding/assets/scss/_cityInformations.scss */
+.moreInformations .services div a figure div {
+  width: 285px;
+  height: 200px;
+}
+
+/* line 52, ../../../../../wamp64/www/projectCoding/assets/scss/_cityInformations.scss */
+.moreInformations .services div a figure div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media all and (max-width: 768px) {
+  /* line 66, ../../../../../wamp64/www/projectCoding/assets/scss/_cityInformations.scss */
+  .moreInformations .presentation article {
+    flex-direction: column;
+  }
+  /* line 68, ../../../../../wamp64/www/projectCoding/assets/scss/_cityInformations.scss */
+  .moreInformations .presentation article p {
+    padding-top: 10px;
+    width: 100%;
+  }
+  /* line 72, ../../../../../wamp64/www/projectCoding/assets/scss/_cityInformations.scss */
+  .moreInformations .presentation article img {
+    width: 100%;
+  }
+}
+
+/* line 1, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+.calendar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+/* line 5, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+.calendar .dateEvent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 10, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+.calendar label {
+  padding-bottom: 5px;
+}
+
+/* line 13, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+.calendar input {
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid black;
+}
+
+/* line 17, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+.calendar input[type=date] {
+  padding: 7px 0;
+  text-align: center;
+}
+
+/* line 21, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+.calendar input[type=submit] {
+  padding: 7px 10px;
+  border-radius: 3%;
+}
+
+/* line 24, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+.calendar input[type=submit]:hover {
+  color: white;
+  background-color: #CA2D15;
+}
+
+/* line 33, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+section .message {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+/* line 38, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+section .bodyArticles {
+  padding-top: 35px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* line 45, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+section .bodyArticles span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* line 49, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+section .bodyArticles article {
+  max-width: 335px;
+  min-height: 355px;
+  display: flex;
+  padding: 20px 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  word-break: break-word;
+}
+
+/* line 58, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+section .bodyArticles article div {
+  height: 255px;
+}
+
+/* line 60, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+section .bodyArticles article div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* line 66, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+section .bodyArticles article h2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* line 70, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+section .bodyArticles article p {
+  text-align: center;
+}
+
+/* line 74, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+section .bodyArticles article a button {
+  background-color: white;
+  border: 1px solid #F23315;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 17px;
+  font-size: 16px;
+  padding: 10px;
+  filter: drop-shadow(1px 1px 5px #F23315);
+}
+
+/* line 81, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+.new {
+  top: 0;
+}
+
+/* line 83, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+.new form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* line 88, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+.new form .buttonArticle button {
+  background-color: white;
+  border: 1px solid #F23315;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  border-radius: 50%;
+  filter: drop-shadow(1px 1px 3px #F23315);
+  padding: 0 !important;
+}
+
+/* line 93, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+.new form .dateEvent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 98, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+.new form .dateEvent label b {
+  font-size: 20px;
+}
+
+/* line 102, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+.new form .dateEvent input[type=date] {
+  border: 1px solid black;
+  background-color: white;
+  text-align: center;
+  padding: 7px 0;
+}
+
+@media all and (max-width: 768px) {
+  /* line 115, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+  section .bodyArticles article h2 {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 426px) {
+  /* line 125, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+  .homeBody .new {
+    top: 45px;
+  }
+  /* line 129, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+  .homeBody section .bodyArticles {
+    padding-top: 20px;
+  }
+  /* line 132, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+  .homeBody section .bodyArticles article h2 {
+    font-size: 18px;
+  }
+  /* line 138, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+  .homeBody .calendar {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 141, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+  .homeBody .calendar div:nth-child(2), .homeBody .calendar div:nth-child(1) {
+    padding-bottom: 10px;
+  }
+}
+
+@media all and (max-width: 359px) {
+  /* line 152, ../../../../../wamp64/www/projectCoding/assets/scss/_event.scss */
+  section .bodyArticles article div img {
+    height: 84%;
+  }
+}
+
+/* line 20, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+.false {
+  padding-top: 10px;
+  font-weight: bold;
+  color: #F23315;
+}
+
+/* line 23, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+.true {
+  padding-top: 10px;
+  font-weight: bold;
+  color: #068532;
+}
+
+/* line 26, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+.signal {
+  padding: 25px 0;
+}
+
+/* line 28, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+.signal header {
+  width: 90%;
+  margin: auto;
+}
+
+/* line 31, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+.signal header h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* line 36, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+.signal .report {
+  width: 70%;
+  margin: auto;
+}
+
+/* line 40, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+.signal .report #register #firstBlock {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+/* line 46, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+.signal .report #register #firstBlock div:nth-child(1), .signal .report #register #firstBlock div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* line 50, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+.signal .report #register #firstBlock div:nth-child(1) label, .signal .report #register #firstBlock div:nth-child(2) label {
+  color: #F23315;
+}
+
+/* line 53, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+.signal .report #register #firstBlock div:nth-child(1) select, .signal .report #register #firstBlock div:nth-child(2) select {
+  border-radius: 5px;
+  padding: 6px;
+  cursor: pointer;
+  background: linear-gradient(to right, #c6c6c6, #bbbbbb);
+}
+
+/* line 59, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+.signal .report #register #secondBlock {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+/* line 63, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+.signal .report #register #secondBlock div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* line 66, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+.signal .report #register #secondBlock div:nth-child(1) input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #a8a8a8;
+}
+
+/* line 72, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+.signal .report #register #secondBlock div:nth-child(1) div button {
+  border-radius: 5px;
+  padding: 6px;
+  cursor: pointer;
+  border: 1px solid #068532;
+  color: #068532;
+  font-size: 15px;
+  background-color: white;
+}
+
+/* line 77, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+.signal .report #register #secondBlock div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* line 79, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+.signal .report #register #secondBlock div:nth-child(2) textarea {
+  width: 100%;
+  min-height: 75px;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #a8a8a8;
+}
+
+@media all and (max-width: 1012px) {
+  /* line 97, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+  .signal .report #register #firstBlock div:nth-child(2) {
+    padding-top: 10px;
+  }
+  /* line 101, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+  .signal .report #register #secondBlock {
+    flex-direction: column-reverse;
+  }
+  /* line 104, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+  .signal .report #register #secondBlock div:nth-child(1) div:nth-child(1) {
+    padding-top: 10px;
+  }
+  /* line 107, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+  .signal .report #register #secondBlock div:nth-child(1) div:nth-child(2) {
+    padding-top: 15px;
+  }
+}
+
+@media all and (max-width: 426px) {
+  /* line 119, ../../../../../wamp64/www/projectCoding/assets/scss/_contactUs.scss */
+  .signal header h1 {
+    font-size: 17px;
+  }
+}
+
+/* line 4, ../../../../../wamp64/www/projectCoding/assets/scss/_faq.scss */
+.homeBody h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+/* line 9, ../../../../../wamp64/www/projectCoding/assets/scss/_faq.scss */
+.homeBody .faq {
+  padding-top: 10px;
+}
+
+/* line 11, ../../../../../wamp64/www/projectCoding/assets/scss/_faq.scss */
+.homeBody .faq div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 15, ../../../../../wamp64/www/projectCoding/assets/scss/_faq.scss */
+.homeBody .faq div a {
+  font-size: 20px;
+  padding: 5px 0;
+  text-decoration: none;
+  color: black;
+}
+
+/* line 20, ../../../../../wamp64/www/projectCoding/assets/scss/_faq.scss */
+.homeBody .faq div a:hover {
+  color: #068532;
+}
+
+@media all and (max-width: 426px) {
+  /* line 29, ../../../../../wamp64/www/projectCoding/assets/scss/_faq.scss */
+  .homeBody h1 {
+    font-size: 19px;
+  }
+}
+
+/* line 5, ../../../../../wamp64/www/projectCoding/assets/scss/_faq-category.scss */
+.homeBody header {
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* line 9, ../../../../../wamp64/www/projectCoding/assets/scss/_faq-category.scss */
+.homeBody .faqCategory {
+  text-align: center;
+  padding-top: 15px;
+  width: 80%;
+  margin: auto;
+}
+
+/* line 14, ../../../../../wamp64/www/projectCoding/assets/scss/_faq-category.scss */
+.homeBody .faqCategory div {
+  margin-bottom: 25px;
+}
+
+/* line 16, ../../../../../wamp64/www/projectCoding/assets/scss/_faq-category.scss */
+.homeBody .faqCategory div .question {
+  background-color: white;
+  color: #068532;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 16px;
+  width: 80%;
+  text-align: center;
+  border: none;
+  outline: thick double #CA2D15;
+  transition: 0.4s;
+}
+
+/* line 28, ../../../../../wamp64/www/projectCoding/assets/scss/_faq-category.scss */
+.homeBody .faqCategory div .response {
+  max-height: 0;
+  overflow: hidden;
+  width: 80%;
+  padding-top: 10px;
+  margin: auto;
+  text-align: left;
+  transition: max-height 0.2s ease-out;
+}
+
+/* line 37, ../../../../../wamp64/www/projectCoding/assets/scss/_faq-category.scss */
+.homeBody .faqCategory div .active, .homeBody .faqCategory div .question:hover {
+  background-color: #CA2D15;
+  color: white;
+}
+
+/* line 1, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main {
+  position: relative;
+}
+
+/* line 4, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .homeBody .connexion {
+  width: 80%;
+  margin: auto;
+}
+
+/* line 7, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .homeBody .connexion h1 {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* line 11, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .homeBody .connexion form {
+  padding-top: 15px;
+}
+
+/* line 13, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .homeBody .connexion form div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+/* line 18, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .homeBody .connexion form div:nth-child(1) input {
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+/* line 24, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .homeBody .connexion form div:nth-child(1) #status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* line 31, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .homeBody .connexion form div:nth-child(2) {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* line 35, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .homeBody .connexion form div:nth-child(2) a {
+  color: #1A68B5;
+}
+
+/* line 38, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .homeBody .connexion form div:nth-child(2) button {
+  border-radius: 5px;
+  padding: 6px;
+  cursor: pointer;
+  border: 1px solid #068532;
+  color: #068532;
+  font-size: 15px;
+  background-color: white;
+}
+
+/* line 42, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .homeBody .connexion form p {
+  padding-top: 8px;
+  text-align: center;
+  color: #F23315;
+}
+
+/* line 50, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .foundMail {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 58, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .foundMail form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  width: 500px;
+  height: 50%;
+  padding: 10px;
+  background-color: white;
+}
+
+/* line 67, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .foundMail form .closeModalMail {
+  display: flex;
+  justify-content: flex-end;
+  color: #1A68B5;
+  font-size: 20px;
+}
+
+/* line 72, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .foundMail form .closeModalMail i {
+  cursor: pointer;
+}
+
+/* line 76, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .foundMail form .register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 81, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .foundMail form .register label {
+  text-align: center;
+}
+
+/* line 84, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .foundMail form .register input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+/* line 91, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .foundMail form div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+  width: 83%;
+}
+
+/* line 95, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+main .foundMail form div:nth-child(3) #send {
+  border: none;
+  background-color: white;
+  color: #1A68B5;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+@media all and (max-width: 457px) {
+  /* line 111, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+  .homeBody .connexion form div:nth-child(1) label {
+    text-align: center;
+  }
+  /* line 115, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+  .homeBody .connexion form div:nth-child(2) {
+    flex-direction: column;
+  }
+  /* line 117, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+  .homeBody .connexion form div:nth-child(2) button {
+    margin-top: 10px;
+  }
+}
+
+@media all and (max-width: 426px) {
+  /* line 128, ../../../../../wamp64/www/projectCoding/assets/scss/_connexion.scss */
+  .homeBody .connexion h1 {
+    font-size: 16px;
+  }
+}
+
+/* line 2, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody #navSession {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* line 6, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody #navSession a {
+  background-color: white;
+  border: 1px solid #F23315;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 17px;
+  font-size: 16px;
+  padding: 10px;
+  filter: drop-shadow(1px 1px 5px #F23315);
+  color: black;
+  text-decoration: none;
+  border-radius: 0;
+  margin: 0;
+}
+
+/* line 14, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody .tableOfReceipt {
+  padding: 20px 0;
+}
+
+/* line 16, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody .tableOfReceipt p {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 20, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody .tableOfReceipt table {
+  width: 80%;
+  margin: auto;
+}
+
+/* line 25, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody .tableOfReceipt table thead tr th {
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+/* line 31, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody .tableOfReceipt table tbody {
+  text-align: center;
+}
+
+/* line 34, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody .tableOfReceipt table tbody tr th, .homeBody .tableOfReceipt table tbody tr td {
+  padding-bottom: 7px;
+}
+
+/* line 36, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody .tableOfReceipt table tbody tr th a, .homeBody .tableOfReceipt table tbody tr td a {
+  color: black;
+}
+
+/* line 44, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody .infoUser {
+  padding: 20px 0;
+  background-color: rgba(190, 180, 180, 0.5);
+}
+
+/* line 47, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody .infoUser h3 {
+  color: #F23315;
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* line 53, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody .infoUser .prevent {
+  text-align: center;
+  padding-bottom: 15px;
+  width: 95%;
+  margin: auto;
+}
+
+/* line 60, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody .infoUser #confirmInfo #displaySession {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* line 63, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody .infoUser #confirmInfo #displaySession div:nth-child(1) {
+  padding-left: 10px;
+}
+
+/* line 66, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody .infoUser #confirmInfo #displaySession div:nth-child(2) {
+  padding-right: 10px;
+}
+
+/* line 69, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody .infoUser #confirmInfo #displaySession div:nth-child(1), .homeBody .infoUser #confirmInfo #displaySession div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* line 74, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody .infoUser #confirmInfo #displaySession div:nth-child(1) h4, .homeBody .infoUser #confirmInfo #displaySession div:nth-child(2) h4 {
+  text-decoration: underline;
+}
+
+/* line 79, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody .infoUser #confirmInfo .confirmBtn {
+  padding-top: 15px;
+  display: flex;
+  width: 65%;
+  margin: auto;
+  justify-content: flex-end;
+}
+
+/* line 85, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+.homeBody .infoUser #confirmInfo .confirmBtn button {
+  border-radius: 5px;
+  padding: 6px;
+  cursor: pointer;
+  border: 1px solid #068532;
+  color: #068532;
+  font-size: 15px;
+  background-color: white;
+}
+
+@media all and (max-width: 769px) {
+  /* line 95, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+  .homeBody #navSession a {
+    font-size: 13px;
+  }
+  /* line 103, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+  .homeBody .tableOfReceipt table thead tr th {
+    padding-bottom: 15px;
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 426px) {
+  /* line 119, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+  .homeBody .tableOfReceipt table thead tr th {
+    font-size: 16px;
+  }
+  /* line 122, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+  .homeBody .tableOfReceipt table thead tr th:nth-child(4) {
+    display: none;
+  }
+  /* line 129, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+  .homeBody .tableOfReceipt table tbody tr td:nth-child(4) {
+    display: none;
+  }
+}
+
+@media all and (max-width: 376px) {
+  /* line 142, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+  .homeBody .infoUser #confirmInfo #displaySession {
+    width: 70%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  /* line 148, ../../../../../wamp64/www/projectCoding/assets/scss/_user-page.scss */
+  .homeBody .infoUser #confirmInfo #displaySession div:nth-child(1), .homeBody .infoUser #confirmInfo #displaySession div:nth-child(2) {
+    padding: 0;
+  }
+}
+
+/* line 2, ../../../../../wamp64/www/projectCoding/assets/scss/_mentionsLegales.scss */
+.homeBody .mentions {
+  width: 90%;
+  margin: auto;
+}
+
+/* line 5, ../../../../../wamp64/www/projectCoding/assets/scss/_mentionsLegales.scss */
+.homeBody .mentions h3 {
+  text-decoration: underline;
+  color: #F23315;
+}
+
+/* line 2, ../../../../../wamp64/www/projectCoding/assets/scss/_coordonnees.scss */
+.homeBody .coordonnees {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+
+/* line 9, ../../../../../wamp64/www/projectCoding/assets/scss/_coordonnees.scss */
+.homeBody .coordonnees .title h3 {
+  text-decoration: underline;
+  color: #F23315;
+  padding-bottom: 10px;
+}
+
+/* line 14, ../../../../../wamp64/www/projectCoding/assets/scss/_coordonnees.scss */
+.homeBody .coordonnees .title div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+/* line 21, ../../../../../wamp64/www/projectCoding/assets/scss/_coordonnees.scss */
+.homeBody .coordonnees .cityHall {
+  width: 500px;
+}
+
+/* line 23, ../../../../../wamp64/www/projectCoding/assets/scss/_coordonnees.scss */
+.homeBody .coordonnees .cityHall img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

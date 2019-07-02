@@ -1,0 +1,96 @@
+$back: #068532;
+.articleId{
+    width: 90%;
+    margin: auto;
+    padding: 35px 0;
+}
+.articleId article h1{
+    text-align: center;
+    font-size: 25px;
+}
+.articleId article h3{
+    text-align: center;
+    color:#F23315;
+    padding-bottom: 30px;
+}
+.container img{
+    width: 40%;
+}
+.container p{
+    width: 58%;
+}
+@mixin containers($container : false , $video :false) {
+  @extend .info;
+  @if ($container == true) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @else if($video == true){
+    justify-content: center;
+  }
+  @else {
+    justify-content: space-between;
+  }
+}
+.container{
+  @include containers(false,false);
+}
+.video{
+   @include containers(false, true);
+ }
+.secondaryPicture{
+    @include containers(true, false);
+    img{
+      max-width: 45%;
+      padding: 8px 0;
+    }
+}
+.info{
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.articleId article .back{
+    margin-bottom: 25px;
+    a{
+        text-decoration: none;
+        color: $back;
+        span{
+            padding: 10px 18px;
+            border: 1px solid $back;
+            border-radius: 100%;
+        }
+    }
+}
+@media all AND (max-width: 769px) {
+  .container{
+    flex-direction: column;
+    img{
+      width: 70%;
+    }
+    p{
+      padding-top: 15px;
+      width: 100%;
+    }
+  }
+}
+@media all AND (max-width: 496px) {
+  .container.video{
+      iframe{
+        width: 100%;
+      }
+  }
+}
+@media all AND (max-width: 426px) {
+  .container {
+    img {
+      width: 90%;
+    }
+  }
+  .secondaryPicture{
+    img{
+      max-width: 70%;
+      padding: 10px 0;
+    }
+  }
+}

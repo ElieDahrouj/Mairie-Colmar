@@ -1,0 +1,200 @@
+$colorMobile : #1A68B5;
+$background : white;
+$blood : #F23315;
+$moreRed: #CA2D15;
+$colorBlack : black;
+$colorBtnSend : #068532;
+$inputBorder : gray;
+$infosUser : rgba(190, 180, 180, 0.5);
+@mixin colorBtnContact($button : false){
+    border-radius: 5px;
+    padding: 6px;
+    cursor: pointer;
+
+    @if($button){
+        border: 1px solid $colorBtnSend;
+        color: $colorBtnSend ;
+        font-size: 15px;
+        background-color: $background;
+    }
+    @else{
+        background: linear-gradient(to right, $colorSelectOne, $colorSelectTwo);
+    }
+}
+@font-face {
+    font-family: Poppins;
+    src: url("../../assets/police/Poppins/Poppins-Regular.ttf");
+}
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: Poppins;
+}
+.navBar{
+    margin: auto;
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: space-around;
+}
+.navBarMobile{
+    display: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: $background;
+    z-index: 99;
+    #mobileContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        #logoMobile{
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 27%;
+            }
+        }
+        .menu{
+            i{
+                font-size: 35px;
+                color: $colorMobile;
+            }
+        }
+        .fa-user-circle{
+            font-size: 35px;
+            color: $colorMobile;
+        }
+    }
+}
+#logo{
+    width: 10%;
+}
+.navigation{
+    display: flex;
+    width: 75%;
+    height: 100%;
+}
+.navigation a:hover{
+    background-color: $blood;
+    color: $background;
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    align-items: center;
+}
+.socialNetwork{
+    width: 11%;
+    display: flex;
+    justify-content: space-around;
+}
+.socialNetwork i{
+    font-size: 25px;
+}
+.socialNetwork a{
+    color: black;
+}
+#picture{
+    width: 100%;
+    display: block;
+}
+#modal{
+    animation-name:modalOpening ;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: $moreRed;
+    top: 0;
+    z-index: 2;
+    display: none;
+    .closeModal{
+        font-size: 35px;
+        color: $background;
+        padding-left: 20px;
+    }
+    .linksMobiles{
+        display: flex;
+        flex-direction: column;
+        height: 75%;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 18px;
+            text-decoration: none;
+            color: $background ;
+            &:hover{
+                background-color: $background;
+                color: $colorBlack;
+            }
+        }
+    }
+    .socialNetworkMobile{
+        font-size: 40px;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        a{
+            color: $background;
+        }
+    }
+}
+@keyframes modalOpening {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@media all and (max-width: 768px) {
+    .navigation a {
+        font-size: 12px;
+        padding: 0 5px;
+        text-align: center;
+    }
+    #logo{
+        width: 11%;
+    }
+    .socialNetwork{
+        flex-direction: column;
+        align-items: center;
+    }
+    .socialNetwork i{
+        padding: 5px;
+    }
+}
+@media all and (max-width: 531px) {
+    .navigation a {
+        font-size: 10px;
+    }
+    .socialNetwork i{
+        font-size: 16px;
+    }
+    .navBar{
+        height: 85px;
+    }
+}
+@media all and (max-width: 426px) {
+    .navBar{
+        display: none;
+    }
+    .navBarMobile{
+        display: block;
+    }
+}

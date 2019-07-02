@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "faq.css",
+	"sources": [
+		"../scss/faq.scss"
+	],
+	"sourcesContent": [
+		"$textBtn: #068532;\r\n$colorBlack : black;\r\n.homeBody{\r\n  h1{\r\n    text-align: center;\r\n    text-decoration: underline;\r\n    font-size: 25px;\r\n  }\r\n  .faq{\r\n    padding-top: 10px;\r\n    div{\r\n      display: flex;\r\n      flex-direction: column;\r\n      align-items: center;\r\n      a{\r\n        font-size: 20px;\r\n        padding:5px 0;\r\n        text-decoration: none;\r\n        color: $colorBlack;\r\n        &:hover{\r\n          color: $textBtn;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n@media all AND (max-width: 426px) {\r\n  .homeBody{\r\n    h1{\r\n      font-size: 19px;\r\n    }\r\n  }\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAEA,AACE,SADO,CACP,EAAE,CAAA;EACA,UAAU,EAAE,MAAM;EAClB,eAAe,EAAE,SAAS;EAC1B,SAAS,EAAE,IAAI;CAChB;;;AALH,AAME,SANO,CAMP,IAAI,CAAA;EACF,WAAW,EAAE,IAAI;CAelB;;;AAtBH,AAQI,SARK,CAMP,IAAI,CAEF,GAAG,CAAA;EACD,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;CAUpB;;;AArBL,AAYM,SAZG,CAMP,IAAI,CAEF,GAAG,CAID,CAAC,CAAA;EACC,SAAS,EAAE,IAAI;EACf,OAAO,EAAC,KAAK;EACb,eAAe,EAAE,IAAI;EACrB,KAAK,EAjBC,KAAK;CAqBZ;;;AApBP,AAiBQ,SAjBC,CAMP,IAAI,CAEF,GAAG,CAID,CAAC,AAKE,MAAM,CAAA;EACL,KAAK,EApBL,OAAO;CAqBR;;AAKT,MAAM,CAAC,GAAG,MAAM,SAAS,EAAE,KAAK;;EAC9B,AACE,SADO,CACP,EAAE,CAAA;IACA,SAAS,EAAE,IAAI;GAChB"
+}

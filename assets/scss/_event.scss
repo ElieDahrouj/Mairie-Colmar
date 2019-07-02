@@ -1,0 +1,159 @@
+.calendar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  .dateEvent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  label {
+    padding-bottom: 5px;
+  }
+  input {
+    cursor: pointer;
+    background-color: $background;
+    border: 1px solid $colorBlack;
+    &[type=date]{
+      padding: 7px 0;
+      text-align: center;
+    }
+    &[type=submit]{
+      padding: 7px 10px;
+      border-radius: 3%;
+      &:hover{
+        color: $background;
+        background-color: $moreRed;
+      }
+    }
+
+  }
+}
+section{
+  .message{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  .bodyArticles{
+    padding-top: 35px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    span{
+      font-weight: bold;
+      font-size: 20px;
+    }
+    article{
+      max-width: 335px;
+      min-height: 355px;
+      display: flex;
+      padding: 20px 10px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      word-break: break-word;
+      div {
+        height: 255px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      h2{
+        font-size: 18px;
+        text-align: center;
+      }
+      p{
+        text-align: center;
+      }
+      a{
+        button{
+          @include btn($circleBtn: false);
+        }
+      }
+    }
+  }
+}
+.new{
+  top: 0;
+  form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .buttonArticle{
+      button{
+        @include btn($circleBtn: true);
+        padding: 0 !important;
+      }
+    }
+    .dateEvent{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      label{
+        b{
+          font-size: 20px;
+        }
+      }
+      input[type = date]{
+        border: 1px solid $colorBlack;
+        background-color: $background;
+        text-align: center;
+        padding: 7px 0;
+      }
+    }
+  }
+}
+@media all AND (max-width: 768px) {
+  section {
+    .bodyArticles {
+      article {
+        h2{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media all AND (max-width: 426px) {
+  .homeBody {
+    .new {
+      top: 45px;
+    }
+    section {
+      .bodyArticles {
+        padding-top: 20px;
+        article {
+          h2 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .calendar {
+      flex-direction: column;
+      align-items: center;
+      div:nth-child(2), div:nth-child(1) {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+@media all AND (max-width: 359px) {
+  section{
+    .bodyArticles{
+      article{
+        div{
+          img{
+            height: 84%;
+          }
+        }
+      }
+    }
+  }
+}

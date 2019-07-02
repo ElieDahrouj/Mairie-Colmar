@@ -1,0 +1,127 @@
+.informations{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 20px;
+    width: 36%;
+    position: relative;
+}
+.informations a i{
+    padding-right: 8px;
+}
+.informations a{
+    color: white;
+    z-index: 1;
+    text-decoration: none;
+}
+.informations:after{
+    content:" ";
+    display: block;
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    right: 0;
+    height: 125px;
+    border-right: 1px solid white;
+}
+.adresse{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 5px;
+}
+.adresse a{
+    color: white;
+    text-decoration: none;
+}
+.size{
+    color: white;
+}
+.contactUs{
+    font-size: 25px;
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $moreRed;
+    width: 76%;
+}
+.localisation{
+    width: 24%;
+    display: flex;
+}
+footer{
+    display: flex;
+}
+@media all and (max-width: 768px) {
+    .informations{
+        font-size: 15px;
+    }
+    .size {
+        .contactUs {
+            font-size: 20px;
+        }
+        .adresse{
+            font-size: 15px;
+        }
+    }
+}
+@media all and (max-width: 578px) {
+    .informations{
+        font-size: 12px;
+        padding: 0 5px;
+        justify-content: space-around;
+    }
+    .size {
+        padding: 0 5px;
+        .contactUs {
+            font-size: 15px;
+        }
+        .adresse{
+            font-size: 13px;
+        }
+    }
+}
+@media all and (max-width :457px){
+    .informations{
+        width: 45%;
+    }
+}
+@media all and (max-width :426px){
+    footer{
+        flex-direction: column;
+        .localisation{
+            width: 100%;
+        }
+        .contact{
+            width: 100%;
+            .informations{
+                width: 100%;
+                height: 125px;
+                font-size: 14px;
+                padding: 0 6px;
+                align-items: center;
+                justify-content: space-around;
+                &:after{
+                    bottom: 0;
+                }
+            }
+            .size{
+                width: 100%;
+                padding: 5px 5px;
+                flex-direction: column;
+                text-align: center;
+                .contactUs{
+                    font-size: 17px;
+                }
+                .adresse{
+                    align-items: center;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

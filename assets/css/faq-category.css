@@ -1,0 +1,51 @@
+/* line 5, ../../../../../wamp64/www/projectCoding/assets/scss/_faq-category.scss */
+.homeBody header {
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* line 9, ../../../../../wamp64/www/projectCoding/assets/scss/_faq-category.scss */
+.homeBody .faqCategory {
+  text-align: center;
+  padding-top: 15px;
+  width: 80%;
+  margin: auto;
+}
+
+/* line 14, ../../../../../wamp64/www/projectCoding/assets/scss/_faq-category.scss */
+.homeBody .faqCategory div {
+  margin-bottom: 25px;
+}
+
+/* line 16, ../../../../../wamp64/www/projectCoding/assets/scss/_faq-category.scss */
+.homeBody .faqCategory div .question {
+  background-color: white;
+  color: #068532;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 16px;
+  width: 80%;
+  text-align: center;
+  border: none;
+  outline: thick double #CA2D15;
+  transition: 0.4s;
+}
+
+/* line 28, ../../../../../wamp64/www/projectCoding/assets/scss/_faq-category.scss */
+.homeBody .faqCategory div .response {
+  max-height: 0;
+  overflow: hidden;
+  width: 80%;
+  padding-top: 10px;
+  margin: auto;
+  text-align: left;
+  transition: max-height 0.2s ease-out;
+}
+
+/* line 37, ../../../../../wamp64/www/projectCoding/assets/scss/_faq-category.scss */
+.homeBody .faqCategory div .active, .homeBody .faqCategory div .question:hover {
+  background-color: #CA2D15;
+  color: white;
+}
+
+/*# sourceMappingURL=faq-category.css.map */

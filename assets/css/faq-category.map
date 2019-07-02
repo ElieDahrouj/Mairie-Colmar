@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "faq-category.css",
+	"sources": [
+		"../scss/faq-category.scss"
+	],
+	"sourcesContent": [
+		"$moreRed: #CA2D15;\r\n$backgroundBtn : white;\r\n$textBtn: #068532;\r\n.homeBody{\r\n  header{\r\n    text-align: center;\r\n    text-decoration: underline;\r\n  }\r\n  .faqCategory {\r\n    text-align: center;\r\n    padding-top: 15px;\r\n    width: 80%;\r\n    margin: auto;\r\n    div {\r\n      margin-bottom: 25px;\r\n      .question{\r\n        background-color: $backgroundBtn;\r\n        color: $textBtn;\r\n        cursor: pointer;\r\n        padding: 15px;\r\n        font-size: 16px;\r\n        width: 80%;\r\n        text-align: center;\r\n        border: none;\r\n        outline: thick double $moreRed;\r\n        transition: 0.4s;\r\n      }\r\n      .response {\r\n        max-height: 0;\r\n        overflow: hidden;\r\n        width: 80%;\r\n        padding-top: 10px;\r\n        margin: auto;\r\n        text-align: left;\r\n        transition: max-height 0.2s ease-out;\r\n      }\r\n      .active, .question:hover {\r\n        background-color: $moreRed;\r\n        color: $backgroundBtn;\r\n      }\r\n    }\r\n  }\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAGA,AACE,SADO,CACP,MAAM,CAAA;EACJ,UAAU,EAAE,MAAM;EAClB,eAAe,EAAE,SAAS;CAC3B;;;AAJH,AAKE,SALO,CAKP,YAAY,CAAC;EACX,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;CA6Bb;;;AAtCH,AAUI,SAVK,CAKP,YAAY,CAKV,GAAG,CAAC;EACF,aAAa,EAAE,IAAI;CA0BpB;;;AArCL,AAYM,SAZG,CAKP,YAAY,CAKV,GAAG,CAED,SAAS,CAAA;EACP,gBAAgB,EAfP,KAAK;EAgBd,KAAK,EAfH,OAAO;EAgBT,MAAM,EAAE,OAAO;EACf,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,GAAG;EACV,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,KAAK,CAAC,MAAM,CAxBnB,OAAO;EAyBT,UAAU,EAAE,IAAI;CACjB;;;AAvBP,AAwBM,SAxBG,CAKP,YAAY,CAKV,GAAG,CAcD,SAAS,CAAC;EACR,UAAU,EAAE,CAAC;EACb,QAAQ,EAAE,MAAM;EAChB,KAAK,EAAE,GAAG;EACV,WAAW,EAAE,IAAI;EACjB,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,wBAAwB;CACrC;;;AAhCP,AAiCM,SAjCG,CAKP,YAAY,CAKV,GAAG,CAuBD,OAAO,EAjCb,SAAS,CAKP,YAAY,CAKV,GAAG,CAuBQ,SAAS,AAAA,MAAM,CAAC;EACvB,gBAAgB,EArCd,OAAO;EAsCT,KAAK,EArCI,KAAK;CAsCf"
+}

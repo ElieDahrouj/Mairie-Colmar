@@ -1,0 +1,40 @@
+/* line 4, ../../../../../wamp64/www/projectCoding/assets/scss/_faq.scss */
+.homeBody h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+/* line 9, ../../../../../wamp64/www/projectCoding/assets/scss/_faq.scss */
+.homeBody .faq {
+  padding-top: 10px;
+}
+
+/* line 11, ../../../../../wamp64/www/projectCoding/assets/scss/_faq.scss */
+.homeBody .faq div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 15, ../../../../../wamp64/www/projectCoding/assets/scss/_faq.scss */
+.homeBody .faq div a {
+  font-size: 20px;
+  padding: 5px 0;
+  text-decoration: none;
+  color: black;
+}
+
+/* line 20, ../../../../../wamp64/www/projectCoding/assets/scss/_faq.scss */
+.homeBody .faq div a:hover {
+  color: #068532;
+}
+
+@media all and (max-width: 426px) {
+  /* line 29, ../../../../../wamp64/www/projectCoding/assets/scss/_faq.scss */
+  .homeBody h1 {
+    font-size: 19px;
+  }
+}
+
+/*# sourceMappingURL=faq.css.map */

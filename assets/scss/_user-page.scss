@@ -1,0 +1,155 @@
+.homeBody {
+  #navSession {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a {
+      @include btn($circleBtn: false);
+      color: $colorBlack;
+      text-decoration: none;
+      border-radius: 0;
+      margin: 0;
+    }
+  }
+  .tableOfReceipt{
+    padding: 20px 0;
+    p{
+      font-weight: bold;
+      text-align: center;
+    }
+    table{
+      width: 80%;
+      margin: auto;
+      thead{
+        tr {
+          th {
+            padding-bottom: 15px;
+            font-size: 18px;
+          }
+        }
+      }
+      tbody{
+        text-align: center;
+        tr{
+          th,td{
+            padding-bottom: 7px;
+            a{
+              color: $colorBlack;
+            }
+          }
+        }
+      }
+    }
+  }
+  .infoUser{
+    padding: 20px 0;
+    background-color: $infosUser;
+    h3{
+      color: $blood;
+      text-decoration: underline;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .prevent{
+      text-align: center;
+      padding-bottom: 15px;
+      width: 95%;
+      margin: auto;
+    }
+    #confirmInfo{
+      #displaySession {
+        display: flex;
+        justify-content: space-evenly;
+        div:nth-child(1){
+          padding-left: 10px;
+        }
+        div:nth-child(2){
+          padding-right: 10px;
+        }
+        div:nth-child(1), div:nth-child(2) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          h4 {
+            text-decoration: underline;
+          }
+        }
+      }
+      .confirmBtn{
+        padding-top: 15px;
+        display: flex;
+        width: 65%;
+        margin: auto;
+        justify-content: flex-end;
+        button{
+        @include colorBtnContact($button :true);
+        }
+      }
+    }
+  }
+}
+@media all AND (max-width: 769px){
+  .homeBody {
+    #navSession {
+      a{
+        font-size: 13px;
+      }
+    }
+    .tableOfReceipt {
+      table {
+        thead {
+          tr {
+            th {
+              padding-bottom: 15px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all AND (max-width: 426px){
+  .homeBody {
+    .tableOfReceipt {
+      table {
+        thead{
+          tr{
+            th{
+              font-size: 16px;
+            }
+            th:nth-child(4){
+              display: none;
+            }
+          }
+        }
+        tbody{
+          tr{
+            td:nth-child(4){
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all AND (max-width: 376px){
+  .homeBody{
+    .infoUser{
+      #confirmInfo{
+        #displaySession{
+          width: 70%;
+          margin: auto;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          div:nth-child(1),div:nth-child(2){
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
