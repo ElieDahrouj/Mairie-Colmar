@@ -1,9 +1,0 @@
-# Junk files
-.DS_Store
-.idea
-.sass-cache/
-*.css.map
-
-# NPM related
-node_modules/
-npm-debug.log
