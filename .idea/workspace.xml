@@ -44,6 +44,7 @@
           <entry key="css" value="36" />
           <entry key="html" value="27" />
           <entry key="js" value="90" />
+          <entry key="md" value="2" />
           <entry key="php" value="528" />
           <entry key="scss" value="161" />
         </counts>
@@ -53,6 +54,7 @@
           <entry key="CSS" value="36" />
           <entry key="HTML" value="27" />
           <entry key="JavaScript" value="90" />
+          <entry key="Markdown" value="2" />
           <entry key="PHP" value="528" />
           <entry key="SCSS" value="161" />
         </counts>
@@ -62,8 +64,10 @@
           <entry key="css" value="1387" />
           <entry key="html" value="199" />
           <entry key="js" value="897" />
+          <entry key="md" value="123" />
           <entry key="php" value="21459" />
           <entry key="scss" value="7054" />
+          <entry key="txt" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -71,7 +75,9 @@
           <entry key="CSS" value="1387" />
           <entry key="HTML" value="199" />
           <entry key="JavaScript" value="897" />
+          <entry key="Markdown" value="123" />
           <entry key="PHP" value="21434" />
+          <entry key="PLAIN_TEXT" value="14" />
           <entry key="SCSS" value="7054" />
           <entry key="SQL" value="25" />
         </counts>
@@ -84,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="164">
-              <caret line="53" column="2" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
+              <caret line="53" column="2" lean-forward="true" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -106,7 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/js/navBarMobile.js" />
         <option value="$PROJECT_DIR$/assets/js/cityServices.js" />
         <option value="$PROJECT_DIR$/views/cityInformations.php" />
         <option value="$PROJECT_DIR$/views/contactUs.php" />
@@ -157,6 +162,7 @@
         <option value="$PROJECT_DIR$/models/faq.php" />
         <option value="$PROJECT_DIR$/partials/header.php" />
         <option value="$PROJECT_DIR$/models/ajax/messages.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -311,12 +317,20 @@
       <workItem from="1562005379634" duration="2047000" />
       <workItem from="1562055307250" duration="3118000" />
       <workItem from="1562075822109" duration="156000" />
-      <workItem from="1562077462413" duration="14071000" />
+      <workItem from="1562077462413" duration="15120000" />
     </task>
+    <task id="LOCAL-00001" summary="second commit">
+      <created>1562111639418</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562111639418</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="471519000" />
+    <option name="totallyTimeSpent" value="472568000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -343,8 +357,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32846716" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49959514" visible="true" weight="0.32846716" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50040483" side_tool="true" weight="0.32846716" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -378,14 +392,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/mentionsLegales.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/coordonnees.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -707,10 +718,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="161">
+            <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
-          <caret line="53" column="2" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
+          <caret line="53" column="2" lean-forward="true" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
         </state>
       </provider>
     </entry>
